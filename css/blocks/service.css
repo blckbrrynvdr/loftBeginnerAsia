@@ -1,0 +1,36 @@
+.service {
+    display: flex;
+}
+
+.service__img {
+    width: 40.2%;
+    margin-right: 60px;
+    border-radius: 6px;
+    overflow: hidden;
+    max-height: 330px;
+}
+
+.service__picture {
+    max-width: 100%;
+    display: block;
+}
+
+.service__content {
+    flex: 1;
+}
+
+.service__content {
+    padding-top: 10px;
+}
+
+.service__title {
+    margin-bottom: 40px;
+    color: #000000;
+}
+
+.service__text {
+    margin-bottom: 36px;
+    line-height: 1.69;
+}
+
+

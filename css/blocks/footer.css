@@ -1,0 +1,23 @@
+.footer {
+    background-color: #001821;
+    color: #ffffff;
+}
+.footer__container {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    padding-top: 46px;
+    padding-bottom: 59px;
+}
+
+.footer__container--border--top {
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.footer__col {
+    display: flex;
+    align-items: center;
+}
+
+.footer__col-right {
+}

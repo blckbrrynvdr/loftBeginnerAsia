@@ -1,0 +1,66 @@
+.offer {
+    width: calc(100% / 3 - 19px);
+    border-radius: 6px;
+    background-color: #FFFFFF;
+    overflow: hidden;
+}
+
+.offer:last-child {
+    margin-right: 0;
+}
+
+.offer__cover {
+    height: 141px;
+    overflow: hidden;
+}
+
+.offer__pic {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: 0px -39px;
+    display: block;
+}
+
+.offer__content {
+    padding: 22px 19px 30px;
+}
+
+.offer__title {
+    color: #000000;
+    margin-bottom: 14px;
+}
+
+.offer__options {
+    display: flex;
+    align-items: center;
+    margin-bottom: 25px;
+}
+
+.offer__option {
+    color: #666666;
+    margin-right: 27px;
+    display: flex;
+    align-items: center;
+}
+
+.offer__option:last-child {
+    margin-right: 0;
+}
+
+.offer__option-picture {
+    width: 36px;
+    height: 28px;
+    margin-right: 6px;
+    text-align: center;
+}
+
+.offer__option-icon {
+    max-width: 100%;
+}
+
+.offer__text {
+    font-size: 14px;
+    color: #333333;
+    margin-bottom: 27px;
+}

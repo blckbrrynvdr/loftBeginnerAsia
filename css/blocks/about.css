@@ -1,0 +1,76 @@
+.about {
+    margin-bottom: 44px;
+}
+
+.about__container {
+    position: relative;
+    padding-top: 107px;
+}
+
+.about__decoration {
+    width: 488px;
+    height: 502px;
+    border-radius: 6px;
+    overflow: hidden;
+    position: relative;
+    z-index: 1;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.about__decoration-pic {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.about__content {
+    position: relative;
+    margin-left: auto;
+    width: 780px;
+    padding: 66px 102px 80px 96px;
+    border-radius: 6px;
+    overflow: hidden;
+}
+
+.about__content::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: url(/images/decor/mountains.jpg) -320px 0% / 146% no-repeat;
+    z-index: 1;
+    filter: blur(1px);
+}
+
+.about__content::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: url(http://api.thumbr.it/whitenoise-361x370.png?background=00000000&noise=ffffff&density=100&opacity=51);
+    z-index: 2;
+    filter: blur(1px);
+}
+
+.about__text-wrap {
+    position: relative;
+    z-index: 3;
+}
+
+.about__content-title {
+    color: #000000;
+    margin-bottom: 26px;
+}
+
+.about__content-text {
+    font-size: 16px;
+    line-height: 27px;
+    color: #333333;
+    margin-bottom: 40px;
+}

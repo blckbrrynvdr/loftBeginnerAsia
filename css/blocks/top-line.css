@@ -1,0 +1,6 @@
+.top-line {
+    color: #ffffff;
+    min-height: 412px;
+    background: url(/images/bg/headline.jpg) center top / cover no-repeat #1a1b1e;
+    padding-bottom: 20px;
+}
