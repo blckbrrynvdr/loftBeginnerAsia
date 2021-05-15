@@ -24,6 +24,9 @@
 
 .offer__content {
     padding: 22px 19px 30px;
+    display: flex;
+    flex-direction: column;
+    min-height: 395px;
 }
 
 .offer__title {
@@ -34,14 +37,20 @@
 .offer__options {
     display: flex;
     align-items: center;
+    flex-wrap: wrap;
     margin-bottom: 25px;
 }
 
 .offer__option {
     color: #666666;
     margin-right: 27px;
+    margin-bottom: 10px;
     display: flex;
     align-items: center;
+}
+
+.offer__option-text {
+    max-width: 91px;
 }
 
 .offer__option:last-child {
@@ -63,4 +72,9 @@
     font-size: 14px;
     color: #333333;
     margin-bottom: 27px;
+}
+
+
+.offer__button-wrap {
+    margin-top: auto;
 }

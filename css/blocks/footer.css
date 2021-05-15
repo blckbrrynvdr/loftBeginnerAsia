@@ -19,5 +19,6 @@
     align-items: center;
 }
 
-.footer__col-right {
+.footer__socials {
+    margin-right: 76px;
 }

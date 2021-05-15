@@ -110,3 +110,14 @@ body {
     background-color: #d21d16;
     color: #FFFFFF;
 }
+
+.reviews {
+    column-count: 2;
+}
+
+.reviews__item {
+    display: inline-flex;
+    border: 1px solid red;
+    padding: 1rem;
+    margin-bottom: 1rem;
+}

@@ -1,7 +1,6 @@
 .socials {
     display: flex;
     align-items: center;
-    margin-right: 76px;
 }
 
 .socials__item {

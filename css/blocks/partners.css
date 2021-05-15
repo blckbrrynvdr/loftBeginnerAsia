@@ -6,7 +6,7 @@
 
 .partners__main-title {
     font-size: 48px;
-    margin-bottom: 99px;
+    margin-bottom: 77px;
 }
 
 .partners__list {
@@ -19,7 +19,19 @@
     min-width: 229px;
     max-width: 300px;
     margin-bottom: 70px;
+    flex-grow: 1;
+    filter: grayscale(1);
+    transition: filter .3s;
 }
+
+.partners__item:hover {
+    filter: grayscale(0);
+}
+
+.partners__item:nth-child(4n) .partners__element{
+    justify-content: flex-end;
+}
+
 .partners__element {
     display: flex;
     align-items: center;
@@ -27,3 +39,4 @@
 .partners__logo {
     max-width: 100%;
 }
+
