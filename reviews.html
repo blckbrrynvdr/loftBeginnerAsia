@@ -221,129 +221,144 @@
         <section class="inner-section">
             <div class="container">
                 <h2 class="inner-section__title">Оставьте отзыв</h2>
-                <form action="" class="form">
+                <form class="form">
                     <div class="form__row">
-                        <input type="text" name="name" placeholder="ФИО" class="form__input">
-                        <input type="text" placeholder="Ссылка на профиль VK" class="form__input">
+                        <input type="text" name="name" class="form__input" placeholder="ФИО">
+                        <input type="text" name="link" class="form__input" placeholder="Ссылка на профиль VK">
                     </div>
                     <div class="form__row">
-                        <textarea class="form__input form__input--textarea"
-                            placeholder="Напишите свой честный отзыв ;)"></textarea>
+                        <textarea name="comment" class="form__input form__input--textarea" placeholder="Напишите свой честный отзыв ;)"></textarea>
                     </div>
                     <div class="form__controls">
                         <div class="form__controls-title">Какими услугами компании пользуетесь?</div>
-                        <ul class="controls">
-                            <li class="controls__item">
-                                <label class="controls__elem">
-                                    <input type="checkbox" name="services" class="controls__checkbox">
-                                    <div class="tag controls__tag">Остров обезьян
-                                </label>
-                                </label>
-                            </li>
-                            <li class="controls__item">
-                                <label class="controls__elem">
-                                    <input type="checkbox" name="services" class="controls__checkbox">
-                                    <div class="tag controls__tag">Тур по Тайланду
-                                </label>
+                        <ul class="form__controls-list control">
+                            <li class="control__item">
+                                <label class="control__elem">
+                                    <input type="checkbox" name="services" class="control__checkbox">
+                                    <div class="control__tag">
+                                        Остров обезьян
+                                    </div>
                                 </label>
                             </li>
-                            <li class="controls__item">
-                                <label class="controls__elem">
-                                    <input type="checkbox" name="services" class="controls__checkbox">
-                                    <div class="tag controls__tag">Водопад Янг-бей
-                                </label>
-                                </label>
-                            </li>
-                            <li class="controls__item">
-                                <label class="controls__elem">
-                                    <input type="checkbox" name="services" class="controls__checkbox">
-                                    <div class="tag controls__tag">Тур по Индонезии
-                                </label>
+                            <li class="control__item">
+                                <label class="control__elem">
+                                    <input type="checkbox" name="services" class="control__checkbox">
+                                    <div class="control__tag">
+                                        Остров обезьян
+                                    </div>
                                 </label>
                             </li>
-                            <li class="controls__item">
-                                <label class="controls__elem">
-                                    <input type="checkbox" name="services" class="controls__checkbox">
-                                    <div class="tag controls__tag">Никакими
-                                </label>
-                                </label>
-                            </li>
-                            <li class="controls__item">
-                                <label class="controls__elem">
-                                    <input type="checkbox" name="services" class="controls__checkbox">
-                                    <div class="tag controls__tag">Тур по Бали
-                                </label>
+                            <li class="control__item">
+                                <label class="control__elem">
+                                    <input type="checkbox" name="services" class="control__checkbox">
+                                    <div class="control__tag">
+                                        Остров обезьян
+                                    </div>
                                 </label>
                             </li>
-                            <li class="controls__item">
-                                <label class="controls__elem">
-                                    <input type="checkbox" name="services" class="controls__checkbox">
-                                    <div class="tag controls__tag">Другое
+                            <li class="control__item">
+                                <label class="control__elem">
+                                    <input type="checkbox" name="services" class="control__checkbox">
+                                    <div class="control__tag">
+                                        Остров обезьян
+                                    </div>
                                 </label>
+                            </li>
+                            <li class="control__item">
+                                <label class="control__elem">
+                                    <input type="checkbox" name="services" class="control__checkbox">
+                                    <div class="control__tag">
+                                        Остров обезьян
+                                    </div>
+                                </label>
+                            </li>
+                            <li class="control__item">
+                                <label class="control__elem">
+                                    <input type="checkbox" name="services" class="control__checkbox">
+                                    <div class="control__tag">
+                                        Остров обезьян
+                                    </div>
+                                </label>
+                            </li>
+                            <li class="control__item">
+                                <label class="control__elem">
+                                    <input type="checkbox" name="services" class="control__checkbox">
+                                    <div class="control__tag">
+                                        Остров обезьян
+                                    </div>
                                 </label>
                             </li>
                         </ul>
                     </div>
-                    
+                    <select name="" id="">
+                        <option value="">Вариант 1</option>
+                        <option value="">Вариант 2</option>
+                        <option value="">Вариант 3</option>
+                    </select>
                     <div class="form__controls">
-                        <div class="form__controls-title">Выберите цвет</div>
+                        <div class="form__controls-title">Выбор цвета type color</div>
                         <input type="color">
                     </div>
                     <div class="form__controls">
-                        <div class="form__controls-title">Выберите дату</div>
+                        <div class="form__controls-title">type="date"</div>
                         <input type="date">
                     </div>
                     <div class="form__controls">
-                        <div class="form__controls-title">Выберите дату и время</div>
+                        <div class="form__controls-title">type="datetime-local"</div>
                         <input type="datetime-local">
                     </div>
                     <div class="form__controls">
-                        <div class="form__controls-title">Введите email</div>
+                        <div class="form__controls-title">type="email"</div>
                         <input type="email">
                     </div>
                     <div class="form__controls">
-                        <div class="form__controls-title">Загрузите файл</div>
-                        <input type="file">
+                        <div class="form__controls-title">type="file"</div>
+                        <label class="control__elem">
+                            <input type="file" class="control__checkbox">
+                            <div class="control__tag">
+                                Приложить файл
+                            </div>
+                        </label>
                     </div>
                     <div class="form__controls">
-                        <div class="form__controls-title">Выберите месяц</div>
+                        <div class="form__controls-title">type="month"</div>
                         <input type="month">
                     </div>
                     <div class="form__controls">
-                        <div class="form__controls-title">Введите номер</div>
+                        <div class="form__controls-title">type="number"</div>
                         <input type="number">
                     </div>
                     <div class="form__controls">
-                        <div class="form__controls-title">Введите пароль</div>
+                        <div class="form__controls-title">type="password"</div>
                         <input type="password">
                     </div>
                     <div class="form__controls">
-                        <div class="form__controls-title">Выберите диапазон</div>
-                        <input type="range">
+                        <div class="form__controls-title">type="range"</div>
+                        <input type="range" class="form__range">
                     </div>
                     <div class="form__controls">
-                        <div class="form__controls-title">Найдите что-то</div>
+                        <div class="form__controls-title">type="search"</div>
                         <input type="search">
                     </div>
                     <div class="form__controls">
-                        <div class="form__controls-title">Введите телефон</div>
+                        <div class="form__controls-title">type="tel"</div>
                         <input type="tel">
                     </div>
                     <div class="form__controls">
-                        <div class="form__controls-title">Укажите время</div>
+                        <div class="form__controls-title">type="time"</div>
                         <input type="time">
                     </div>
                     <div class="form__controls">
-                        <div class="form__controls-title">Введите URL </div>
+                        <div class="form__controls-title">type="url"</div>
                         <input type="url">
                     </div>
                     <div class="form__controls">
-                        <div class="form__controls-title">Выберите неделю</div>
+                        <div class="form__controls-title"> type="week"</div>
                         <input type="week">
                     </div>
-                    <div class="form__btns">
-                        <button type="reset" class="btn btn--theme--black form__btn">Очистить</button>
-                        <button type="submit" class="btn btn--theme--red  form__btn">Отправить</button>
+                    <div class="form__buttons">
+                        <button type="reset" class="btn btn--theme--black">Очистить</button>
+                        <button type="submit" class="btn btn--theme--red">Отправить</button>
                     </div>
                 </form>
             </div>
