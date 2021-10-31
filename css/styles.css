@@ -1,33 +1,28 @@
 @font-face {
     font-family: 'OpenSans-Bold';
-    src: url('../fonts/OpenSans-Bold.woff2') format('woff2'),
-        url('../fonts/OpenSans-Bold.woff') format('woff');
-    font-weight: bold;
-    font-style: normal;
-}
-
-@font-face {
-    font-family: 'OpenSans';
-    src: url('../fonts/OpenSans-Regular.woff2') format('woff2'),
-        url('../fonts/OpenSans-Regular.woff') format('woff');
+    src: url('../fonts/opensans-bold-webfont.woff2') format('woff2'), url('../fonts/opensans-bold-webfont.woff') format('woff');
     font-weight: normal;
     font-style: normal;
 }
 
 @font-face {
-    font-family: 'OpenSans-SemiBold';
-    src: url('../fonts/OpenSans-SemiBold.woff2') format('woff2'),
-        url('../fonts/OpenSans-SemiBold.woff') format('woff');
-    font-weight: 600;
+    font-family: 'OpenSans';
+    src: url('../fonts/opensans-regular-webfont.woff2') format('woff2'), url('../fonts/opensans-regular-webfont.woff') format('woff');
+    font-weight: normal;
     font-style: normal;
 }
 
-html {
-    box-sizing:border-box;
+@font-face {
+    font-family: 'OpenSans-Semi';
+    src: url('../fonts/opensans-semibold-webfont.woff2') format('woff2'), url('../fonts/opensans-semibold-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
 }
 
-*,::before,::after {
-    box-sizing: inherit;
+*,
+::before,
+::after {
+    box-sizing: border-box;
 }
 
 h1,
@@ -38,6 +33,10 @@ h5,
 h6,
 p {
     margin: 0;
+}
+
+address {
+    font-style: normal;
 }
 
 h1 {
@@ -78,7 +77,6 @@ body {
 }
 
 .wrapper-main {
-    background-color: #0e1e26;
     color: #FFFFFF;
     background: url(../images/bg/hero.jpg) center top no-repeat, url(../images/bg/bottom-pic.jpg) right bottom 206px no-repeat;
     background-color: #001821;
@@ -96,7 +94,7 @@ body {
     left: 0;
     width: 100%;
     height: 1202px;
-    background: url(../images/bg/hero.jpg) top center / cover no-repeat; 
+    background: url(../images/bg/hero.jpg) top center / cover no-repeat;
 }
 
 .page-cover__down {
@@ -105,36 +103,51 @@ body {
     bottom: 165px;
     width: 100%;
     height: 893px;
-z-index: 0;
+    z-index: 0;
 }
 
 .page-cover__image {
     max-width: 100%;
 }
 
+
 /* Header */
 
 .header {
     padding-top: 29px;
     margin-bottom: 167px;
+    color: #ffffff;
 }
 
-.header__col {
-    display: inline-block;
+.header__logo {
+    margin-right: 79px;
 }
 
-.header__col-phone {
+.header__contacts {
     position: absolute;
+    text-align: right;
     right: 0;
     top: 50%;
     transform: translateY(-50%);
 }
 
-.header__contacts {
+
+/* Header */
+
+
+/* contacts */
+
+.contacts {
     text-align: right;
 }
 
-.header__schedule-button {
+.contacts__phone-number {
+    color: inherit;
+    font-size: 26px;
+    line-height: 35px;
+}
+
+.contacts__schedule-button {
     color: inherit;
     font-size: 13px;
     line-height: 1;
@@ -142,37 +155,45 @@ z-index: 0;
     text-decoration: underline;
 }
 
-/* Header */
 
-/* GLOBALS */
-.company-logo {
-    display: inline-block;
-    vertical-align: middle;
-    width: 98px;
-    margin-right: 66px;
-}
+/* contacts */
 
-.company-logo__image {
-    max-width: 100%;
-}
 
-.site-menu__menu {
+/* menu */
+
+.menu {
     display: inline-block;
     vertical-align: middle;
 }
 
-.site-menu__menu-item {
+.menu__item {
     display: inline-block;
     margin-right: 50px;
 }
 
-.site-menu__menu-item:last-child {
+.menu__item:last-child {
     margin-right: 0;
 }
 
-.site-menu__menu-link {
+.menu__link {
     color: inherit;
     font-size: 14px;
+}
+
+
+/* menu */
+
+
+/* GLOBALS */
+
+.company-logo {
+    display: inline-block;
+    vertical-align: middle;
+    width: 98px;
+}
+
+.company-logo__image {
+    max-width: 100%;
 }
 
 .site__phone-number {
@@ -181,20 +202,23 @@ z-index: 0;
     line-height: 1;
 }
 
-.button__red-wide {
+.btn {
     display: inline-block;
-    background-color: #ba0700;
     font-size: 14px;
     font-family: 'OpenSans-Bold', Arial, Helvetica, sans-serif;
     line-height: 52px;
     height: 52px;
-    padding: 0 39px;
-    color: #FFFFFF;
     border-radius: 26px;
     text-transform: uppercase;
 }
 
-.button__white {
+.btn--theme-primary {
+    background-color: #ba0700;
+    padding: 0 39px;
+    color: #FFFFFF;
+}
+
+.btn--theme-common {
     display: inline-block;
     background-color: #FFFFFF;
     font-size: 14px;
@@ -209,12 +233,14 @@ z-index: 0;
     transition: background-color .3s, color .3s;
 }
 
-.button__white:hover {
+.btn--theme-common:hover {
     background-color: #d21d16;
     color: #FFFFFF;
 }
 
+
 /* GLOBALS */
+
 
 /* HERO */
 
@@ -237,7 +263,9 @@ z-index: 0;
     margin-bottom: 36px;
 }
 
+
 /* HERO */
+
 
 /* OFFERS */
 
@@ -259,8 +287,8 @@ z-index: 0;
 }
 
 
-
 /* OFFERS */
+
 
 /* OFFER */
 
@@ -331,7 +359,9 @@ z-index: 0;
     margin-bottom: 27px;
 }
 
+
 /* OFFER */
+
 
 /* NEWS */
 
@@ -397,7 +427,9 @@ z-index: 0;
     margin-bottom: 11px;
 }
 
+
 /* NEWS */
+
 
 /* PAGINATION */
 
@@ -412,7 +444,6 @@ z-index: 0;
     display: inline-block;
     vertical-align: middle;
     margin-right: 16px;
-
 }
 
 .pagination__list {
@@ -437,10 +468,12 @@ z-index: 0;
 .pagination__link--active,
 .pagination__link:hover {
     background-color: #FFFFFF;
-    color:#d21d16;
+    color: #d21d16;
 }
 
+
 /* PAGINATION */
+
 
 /* ABOUT */
 
@@ -521,7 +554,9 @@ z-index: 0;
     margin-bottom: 46px;
 }
 
+
 /* ABOUT */
+
 
 /* FOOTER */
 
@@ -559,9 +594,45 @@ z-index: 0;
     margin-right: 0;
 }
 
+.socials__link {
+    width: 36px;
+    height: 36px;
+    display: block;
+    background: center center / contain no-repeat;
+}
+
+.socials__link--icon-telegram {
+    background-image: url(../images/icons/socials/telegram.png);
+}
+
+.socials__link--icon-vk {
+    background-image: url(../images/icons/socials/vkontakte.png);
+}
+
+.socials__link--icon-facebook {
+    background-image: url(../images/icons/socials/facebook.png);
+}
+
+.socials__link--icon-instagram {
+    background-image: url(../images/icons/socials/instagram.png);
+}
+
+.footer__logo {
+    margin-right: 79px;
+}
+
 .footer__contacts {
-    display: inline-block;
-    vertical-align: middle;
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.footer__socials {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 300px;
 }
 
 .footer__contacts-text {
@@ -571,5 +642,6 @@ z-index: 0;
     text-align: right;
     color: #999999;
 }
+
 
 /* FOOTER */
