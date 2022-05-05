@@ -18,6 +18,13 @@
     color: #ffffff;
 }
 
+.pagination__link--active,
+.pagination__link:hover {
+    background-color: #FFFFFF;
+    color:#d21d16;
+}
+
+
 .pagination__desc {
     margin-right: 16px;
 
@@ -37,10 +44,4 @@
     width: 32px;
     line-height: 32px;
     color: inherit;
-}
-
-.pagination__link--active,
-.pagination__link:hover {
-    background-color: #FFFFFF;
-    color:#d21d16;
 }

@@ -9,3 +9,21 @@
 .services__item:last-child {
 margin-bottom: 0;
 }
+.services--theme-column {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    column-gap: 25px;
+}
+
+.services--theme-column .services__item{
+    width: calc(100% / 3);
+    display: flex;
+    flex-direction: column;
+}
+
+.services--theme-column .service__img {
+    width: 100%;
+    margin-right: 0;
+    max-height: 250px;
+}

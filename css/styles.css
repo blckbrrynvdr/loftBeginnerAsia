@@ -3,6 +3,9 @@
 @import url('./layout/base.css');
 
 @import url('./blocks/header.css');
+@import url('./blocks/header-main.css');
+@import url('./blocks/header-inner.css');
+@import url('./blocks/button.css');
 @import url('./blocks/logo.css');
 @import url('./blocks/menu.css');
 @import url('./blocks/contacts.css');

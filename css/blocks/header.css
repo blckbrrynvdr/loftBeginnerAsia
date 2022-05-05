@@ -3,10 +3,6 @@
     margin-bottom: 150px;
 }
 
-.header--inner {
-    margin-bottom: 91px;
-}
-
 .header__container {
     display: flex;
     justify-content: space-between;

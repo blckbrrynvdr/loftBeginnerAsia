@@ -5,6 +5,10 @@
     padding-bottom: 20px;
 }
 
+.top-line__header {
+    margin-bottom: 91px;
+}
+
 .top-line__promo {
     display: flex;
     align-items: center;
