@@ -5,15 +5,16 @@
 }
 
 .form__input {
-    background: #ffffff;
-    padding: 18px 30px;
+    background-color: #ffffff;
+    padding: 19px 30px 21px;
     font-size: 18px;
-    line-height: 1.4;
+    line-height: 1.16;
     border: 1px solid transparent;
     flex: 1;
     margin-right: 28px;
     border-radius: 5px;
 }
+
 .form__input:last-child {
     margin-right: 0;
 }
@@ -33,25 +34,25 @@
 }
 
 .form__controls {
-    display: flex;
-    align-items: flex-start;
     margin-bottom: 32px;
+    align-items: flex-start;
+}
+
+.form__controls-title {
+    width: 35%;
+    margin-right: 30px;
+    padding-top: 11px;
 }
 
 .form__controls-list {
     flex: 1;
 }
 
-.form__controls-title {
-    width: 35%;
-    margin-right: 30px;
+.form__row--buttons {
+    justify-content: flex-end;
+    gap: 17px;
 }
 
-.form__buttons {
-    display: flex;
-    justify-content: flex-end;
-    column-gap: 17px;
-}
 
 
 .form__range {

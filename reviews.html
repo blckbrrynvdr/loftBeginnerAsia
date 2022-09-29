@@ -223,13 +223,13 @@
                 <h2 class="inner-section__title">Оставьте отзыв</h2>
                 <form class="form">
                     <div class="form__row">
-                        <input type="text" name="name" class="form__input" placeholder="ФИО">
-                        <input type="text" name="link" class="form__input" placeholder="Ссылка на профиль VK">
+                        <input type="text" class="form__input" name="name" placeholder="Имя">
+                        <input type="text" class="form__input" name="profile" placeholder="Ссылка на профиль VK">
                     </div>
                     <div class="form__row">
                         <textarea name="comment" class="form__input form__input--textarea" placeholder="Напишите свой честный отзыв ;)"></textarea>
                     </div>
-                    <div class="form__controls">
+                    <div class="form__row form__controls">
                         <div class="form__controls-title">Какими услугами компании пользуетесь?</div>
                         <ul class="form__controls-list control">
                             <li class="control__item">
@@ -290,11 +290,13 @@
                             </li>
                         </ul>
                     </div>
+                    
                     <select name="" id="">
                         <option value="">Вариант 1</option>
                         <option value="">Вариант 2</option>
                         <option value="">Вариант 3</option>
                     </select>
+
                     <div class="form__controls">
                         <div class="form__controls-title">Выбор цвета type color</div>
                         <input type="color">
@@ -309,7 +311,7 @@
                     </div>
                     <div class="form__controls">
                         <div class="form__controls-title">type="email"</div>
-                        <input type="email">
+                        <input type="email" class="form__input">
                     </div>
                     <div class="form__controls">
                         <div class="form__controls-title">type="file"</div>
@@ -334,7 +336,7 @@
                     </div>
                     <div class="form__controls">
                         <div class="form__controls-title">type="range"</div>
-                        <input type="range" class="form__range">
+                        <input type="range" class="form__range form__input">
                     </div>
                     <div class="form__controls">
                         <div class="form__controls-title">type="search"</div>
@@ -356,7 +358,7 @@
                         <div class="form__controls-title"> type="week"</div>
                         <input type="week">
                     </div>
-                    <div class="form__buttons">
+                    <div class="form__row form__row--buttons">
                         <button type="reset" class="btn btn--theme--black">Очистить</button>
                         <button type="submit" class="btn btn--theme--red">Отправить</button>
                     </div>

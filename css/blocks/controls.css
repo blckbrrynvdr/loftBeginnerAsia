@@ -10,24 +10,25 @@
 
 .control__tag {
     font-size: 13px;
-    line-height: 1.4;
+    line-height: 1.15;
     padding: 9px 15px;
-    background: #E7E7E7;
+    background-color: #E7E7E7;
     color: #303030;
     border-radius: 35px;
+    border: 2px solid transparent;
 }
 
 .control__checkbox:checked + .control__tag {
-    background: #B9EAE4;
+    background-color: #B9EAE4;
 }
 
 .control__checkbox:focus + .control__tag {
-    background: #B9EAE4;
-    /* border: 1px solid #333333; */
+    border-color: #7f9794;
 }
 
+
 .control__checkbox {
-    display: none;
+    /* display: none; */
     appearance: none;
     -ms-progress-appearance: none;
     position: absolute;
